@@ -1,0 +1,28 @@
+GET  http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJNdWhhbW1hZCBBcmkiLCJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcxMzYxODk5NywiZXhwIjoxNzEzNjE5MDE3fQ.rPjNsz7x3z2ZxjTUWfVwpBLw_jQT-mWo31FWgyXviZo
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Muhammad Ari",
+    "email": "email@gmail.com",
+    "password": "123456",
+    "confPassword": "123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "email@gmail.com",
+    "password": "123456"
+}
+
+###
+GET  http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
