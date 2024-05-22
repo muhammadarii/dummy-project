@@ -1,6 +1,6 @@
-import Header from "@/components/AnimeList/Header";
-import AnimeList from "@/components/AnimeList";
-import {getAnimeResponse, getNestedAnimeResponse, reproduce} from "@/libs/api-libs"
+import Header from "../components/AnimeList/Header"
+import AnimeList from "../components/AnimeList"
+import {getAnimeResponse, getNestedAnimeResponse, reproduce} from "../libs/api-libs"
 
 const Page = async () => {
 
